@@ -1,0 +1,10 @@
+services:
+    app.doctrine_enums:
+        # на самом деле это не сервис, а костыль для инициализации типов перечислений
+        # в момент инициализации доктрины
+        class: '%doctrine.orm.entity_manager.class%'
+        decorates: 'doctrine.orm.default_entity_manager'
+        factory: ['Nalogka\EnumType\Doctrine\DoctrineEnums', 'registerEnums']
+        arguments:
+            - '@app.doctrine_enums.inner'
+            - '@annotation_reader'

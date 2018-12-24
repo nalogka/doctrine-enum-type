@@ -1,0 +1,33 @@
+{
+    "name": "nalogka/doctrine-enum-type",
+    "keywords": ["doctrine enum", "type"],
+    "homepage": "https://bitbucket.org/nalogka/nalogka-doctrine-enum-type",
+    "description": "Расширенное поле типа Enum для Doctrine ORM",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Anton Endiuskin",
+            "email": "ultoniq@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1"
+    },
+    "suggest": {
+        "doctrine/orm": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nalogka\\EnumType\\": "src/"
+        }
+    },
+    "repositories": [{
+        "type": "composer",
+        "url": "https://pkgs.nalogka.com"
+    }],
+    "require-dev": {
+        "doctrine/orm": "*"
+    }
+}
