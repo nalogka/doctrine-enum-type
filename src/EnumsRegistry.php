@@ -9,7 +9,7 @@ use Doctrine\Common\Annotations\Reader;
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\ORM\EntityManagerInterface;
 
-class DoctrineEnums
+class EnumsRegistry
 {
     /**
      * @param EntityManagerInterface $entityManager
@@ -17,7 +17,7 @@ class DoctrineEnums
      * @return EntityManagerInterface
      * @throws \Doctrine\DBAL\DBALException
      */
-    public static function registerEnums(EntityManagerInterface $entityManager, Reader $annotations)
+    public static function register(EntityManagerInterface $entityManager, Reader $annotations)
     {
         $databasePlatform = $entityManager->getConnection()->getDatabasePlatform();
         foreach ($entityManager->getMetadataFactory()->getAllMetadata() as $classMetadata) {
