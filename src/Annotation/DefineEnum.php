@@ -1,6 +1,6 @@
 <?php
 
-namespace Nalogka\EnumType\Annotation;
+namespace Nalogka\DoctrineEnumType\Annotation;
 
 /**
  * @Annotation

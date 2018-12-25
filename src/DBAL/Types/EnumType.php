@@ -1,6 +1,6 @@
 <?php
 
-namespace Nalogka\EnumType\DBAL\Types;
+namespace Nalogka\DoctrineEnumType\DBAL\Types;
 
 use Doctrine\DBAL\DBALException;
 use Doctrine\DBAL\Platforms\AbstractPlatform;

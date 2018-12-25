@@ -1,14 +1,13 @@
 <?php
 
-namespace Nalogka\EnumType\Doctrine;
+namespace Nalogka\DoctrineEnumType;
 
 use Doctrine\DBAL\Types\Type;
-use Nalogka\EnumType\Annotation\DefineEnum;
-use Nalogka\EnumType\DBAL\Types\EnumType;
+use Nalogka\DoctrineEnumType\Annotation\DefineEnum;
+use Nalogka\DoctrineEnumType\DBAL\Types\EnumType;
 use Doctrine\Common\Annotations\Reader;
 use Doctrine\DBAL\Platforms\AbstractPlatform;
 use Doctrine\ORM\EntityManagerInterface;
-use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class EnumsRegistry
 {
