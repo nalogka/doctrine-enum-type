@@ -3,7 +3,7 @@
     "keywords": ["doctrine enum", "type"],
     "homepage": "https://bitbucket.org/nalogka/nalogka-doctrine-enum-type",
     "description": "Расширенное поле типа Enum для Doctrine ORM",
-    "type": "library",
+    "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
         {

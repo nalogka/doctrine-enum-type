@@ -20,6 +20,8 @@ class EnumsRegistry
     public static function register(EntityManagerInterface $entityManager, Reader $annotations)
     {
         $databasePlatform = $entityManager->getConnection()->getDatabasePlatform();
+        $databasePlatform->registerDoctrineTypeMapping('enum', 'string');
+
         foreach ($entityManager->getMetadataFactory()->getAllMetadata() as $classMetadata) {
             $class = $classMetadata->getReflectionClass();
             if ($annotation = $annotations->getClassAnnotation($class, DefineEnum::class)) {
